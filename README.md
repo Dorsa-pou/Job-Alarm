@@ -7,7 +7,7 @@ Ich habe ihn für meine eigene Jobsuche neben dem Studium gebaut, damit ich nich
 ## Funktionen
 
 - **Tägliche automatische Suche** über GitHub Actions, auch wenn mein Computer ausgeschaltet ist
-- **Mehrere Regionen:** Luzern (+35 km) und Bern (+15 km)
+- **Mehrere Regionen:** Luzern (+55 km) und Bern (+25 km)
 - **Intelligente Filter:**
   - nur Stellen in erlaubten Kantonen (LU, ZG, SZ, NW, OW, UR, BE)
   - nur IT-Stellen (erkannt anhand von Fachbegriffen im Titel)
