@@ -34,11 +34,11 @@ Ich habe ihn für meine eigene Jobsuche neben dem Studium gebaut, damit ich nich
 ## Technologien
 
 - **Python 3** mit `requests` und `python-dotenv`
-- **Adzuna-API** – Abruf von Stellenangeboten (REST, JSON)
-- **Telegram-Bot-API** – Versand von Nachrichten
-- **GitHub Actions** – zeitgesteuerte Ausführung in der Cloud
-- **GitHub Secrets** – sichere Speicherung der Zugangsdaten
-- **Git & GitHub** – Versionskontrolle
+- **Adzuna-API**: Abruf von Stellenangeboten (REST, JSON)
+- **Telegram-Bot-API**: Versand von Nachrichten
+- **GitHub Actions**: zeitgesteuerte Ausführung in der Cloud
+- **GitHub Secrets**: sichere Speicherung der Zugangsdaten
+- **Git & GitHub**: Versionskontrolle
 
 ## Herausforderungen und Lösungen
 
@@ -97,4 +97,4 @@ ADZUNA_APP_KEY=...
 
 ## Über mich
 
-**Dorsa Pourmoghaddam** – Studentin BSc Artificial Intelligence & Machine Learning an der Hochschule Luzern
+**Dorsa Pourmoghaddam** - Studentin BSc Artificial Intelligence & Machine Learning an der Hochschule Luzern
