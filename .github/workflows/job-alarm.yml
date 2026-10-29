@@ -1,0 +1,40 @@
+name: Job-Alarm
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  suchen:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code holen
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Bibliotheken installieren
+        run: pip install -r requirements.txt
+
+      - name: Job-Alarm starten
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+        run: python Job_Alarm.py
+
+      - name: Gedächtnis speichern
+        run: |
+          git config user.name "job-alarm-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add gesendet.json
+          git diff --staged --quiet || git commit -m "Gedächtnis aktualisiert"
+          git push
